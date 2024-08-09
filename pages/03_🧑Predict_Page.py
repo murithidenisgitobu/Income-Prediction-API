@@ -1,6 +1,9 @@
 import streamlit as st
 import joblib
 import pandas as pd
+from datetime import datetime
+import csv
+
 
 # Set up page
 st.set_page_config(page_title='Income Prediction App', page_icon='📊', layout='wide')
@@ -9,7 +12,7 @@ st.set_page_config(page_title='Income Prediction App', page_icon='📊', layout=
 st.title('Prediction Page')
 
 # Load models and encoder
-with st.spinner('Loading models and encoder...'):
+with st.spinner('Loading models...'):
     model_forest = joblib.load(r'toolkit\rf_model.joblib')
     model_xgb = joblib.load(r'toolkit\xgb_model.joblib')
     encoder = joblib.load(r'toolkit\label_encoder.joblib')
@@ -213,3 +216,21 @@ if submit_button:
 
     # Display results
     st.write(f'{model_choice} Prediction: {original_prediction[0]}')
+
+    # Save prediction to history CSV
+    history_file = 'Data\history.csv'
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    
+    # Prepare the row to be written
+    row = [current_time, model_choice] + data.iloc[0].tolist() + [original_prediction[0]]
+    
+    # Write to CSV
+    with open(history_file, mode='a', newline='') as file:
+        writer = csv.writer(file)
+        # If the file is empty, write the header
+        if file.tell() == 0:
+            header = ['Timestamp', 'Model'] + data.columns.tolist() + ['Prediction']
+            writer.writerow(header)
+        writer.writerow(row)
+
+    st.success(f"Prediction saved. Check history page")
