@@ -26,22 +26,21 @@ Clone the project
   git clone https://github.com/murithidenisgitobu/Income-Prediction-API
 ```
 
+Install dependencies
+
+```bash
+  pip install -r requirements.txt
+```
 Go to the project directory
 
 ```bash
   cd api
 ```
 
-Install dependencies
-
-```bash
-  pip install -r requirements.txt
-```
-
 Start the server
 
 ```bash
-uvicorn app:app
+uvicorn app:app --reload
 ```
 
 ## Run Streamlit App Locally
@@ -56,7 +55,7 @@ streamlit run Home.py
 
 ## App Screenshot
 
-![alt text](image.png)
+(image.png)
 
 ## Power Point Link
 
