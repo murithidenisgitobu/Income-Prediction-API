@@ -55,7 +55,6 @@ streamlit run Home.py
 
 ## App Screenshot
 
-(image.png)
 
 ## Power Point Link
 
