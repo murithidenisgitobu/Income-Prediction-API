@@ -82,16 +82,9 @@ To run the Streamlit app, use the following command:
 
 ```bash
 streamlit run Home.py
-
-## Screenshots
-
-## App Screenshots
-![image](https://github.com/user-attachments/assets/6c9423ec-e640-47df-b13f-f2d4b8cebd48)
-
-## API screenshot
-![image](https://github.com/user-attachments/assets/b6d63ee4-c3a9-4ec3-a7a8-bffc020b5af2)
+![image](https://github.com/user-attachments/assets/7841d4aa-a597-4b2f-a25a-7e15629f487d)
 
 
-## Power Point Link
+Power Point Link
 
 https://1drv.ms/p/s!AveoYC37sJ-ygWaHGKoZuFnoCioR
