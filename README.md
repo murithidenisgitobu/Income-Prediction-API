@@ -85,8 +85,10 @@ streamlit run Home.py
 ## Screenshots
 
 ## App Screenshots
-<img width="923" alt="image" src="https://github.com/user-attachments/assets/5803c5d7-5a36-4a51-9ffa-fc584b4a8e4f">
+![image](https://github.com/user-attachments/assets/6c9423ec-e640-47df-b13f-f2d4b8cebd48)
 
+## API screshot
+![image](https://github.com/user-attachments/assets/b6d63ee4-c3a9-4ec3-a7a8-bffc020b5af2)
 
 
 ## Power Point Link
