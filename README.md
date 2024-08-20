@@ -1,5 +1,6 @@
 
 # Income Prediction Challenge for Azubian
+![image](https://github.com/user-attachments/assets/e8a7f136-0c30-433e-9259-4c5ba0b6501b)
 
 The objective of this project is to develop a machine learning model to predict whether an individual earns above or below a certain income threshold. This tool aims to assist policymakers in monitoring income levels, managing income inequality, and addressing challenges posed by AI and automation.
 
@@ -87,7 +88,7 @@ streamlit run Home.py
 ## App Screenshots
 ![image](https://github.com/user-attachments/assets/6c9423ec-e640-47df-b13f-f2d4b8cebd48)
 
-## API screshot
+## API screenshot
 ![image](https://github.com/user-attachments/assets/b6d63ee4-c3a9-4ec3-a7a8-bffc020b5af2)
 
 
